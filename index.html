@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set mode using cookie data</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="setUserChoice()">
+    <div class="mode-container">
+
+        <h1>This page gives you the option to choose the colour of form text fields.</h1>
+
+        <h2>Please choose your preferred colour for the form text fields</h2>
+     
+        
+        <div id="colourPickerContainer">
+            <input type="color" id="colourChoice" name="colourChoice">
+            <button id="setColour" onclick="setColour()">Set colour</button>
+        </div>
+
+        <div id="textFieldContainer">
+            <label for="textField">Form text field:</label>
+            <input type="text" name="textField" id="textField">
+        </div>
+    </div>
+    
+</body>
+</html>
